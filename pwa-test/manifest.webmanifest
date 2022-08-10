@@ -1,0 +1,15 @@
+{
+    "name": "Progressive Web App Test",
+    "short_name": "PWA Test",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#141414",
+    "description": "PWA Test",
+    "icons": [
+        {
+            "src": "images/darth_vader_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

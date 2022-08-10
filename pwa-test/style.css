@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     background-color: #141414;
+    color: #fdfdfd;
+    font-family: 'Rubik', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
 }
