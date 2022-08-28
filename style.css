@@ -1,0 +1,63 @@
+:root {
+    --fw-light: 100;
+    --fw-primary: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+}
+
+@keyframes fade-in-from-left {
+    from {left: -200%;}
+    to {left: 0;}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.landing-hero {
+    background-color: #141414;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    color: #EEE;
+}
+
+.landing-hero > .container {
+    position: absolute;
+    width: fit-content;
+    top: 15rem;
+    left: 10rem;
+}
+
+.hero-title,
+.hero-subtitle {
+    position: relative;
+    left: -200%;
+    animation-name: fade-in-from-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: var(--fw-medium);
+    margin-bottom: 0.5em;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    max-width: 18ch;
+    animation-delay: 200ms;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
